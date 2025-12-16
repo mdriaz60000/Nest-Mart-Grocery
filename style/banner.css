@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Poppins, Inter, sans-serif;
+    background: #f5f7fa;
+}
+
+/* ===== Banner Section ===== */
+.banner-section {
+    position: relative;
+    padding: 60px 40px; /* content padding */
+    overflow: hidden;
+}
+
+/* Background with padding effect */
+.banner-section::before {
+    content: "";
+    position: absolute;
+    inset: 40px; /* THIS creates background padding */
+    background-image: url("../image/banner/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px; /* optional nice look */
+    z-index: -1;
+}
+
+/* Main container */
+.banner-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center ;
+     justify-content: space-around; 
+}
+
+/* Text Content */
+/* .banner-text-content {
+    position: ;
+} */
+
+.banner-text-content h1 {
+    font-size: 2.5rem;
+    font-weight:bold ;
+    font-family: Poppins;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.banner-text-content p {
+    font-size: 1.1rem;
+    font-family: Roboto;
+    color: #B0A9A9;;
+    margin-bottom: 25px;
+}
+
+.subscribe-form {
+    position: relative;
+    width: 280px;
+    margin-top: 20px;
+}
+
+/* Input */
+.subscribe-form input {
+    width: 100%;
+    padding: 12px 100px 12px 15px; /* right padding for button space */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+}
+
+/* Button inside input */
+.subscribe-form button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 8px 18px;
+    background: #3BB77E;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.subscribe-form button:hover {
+    background: #e68900;
+}
+
+/* Product Image */
+.product-image {
+   
+    max-width: 420px;
+}
+
+
