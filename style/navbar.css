@@ -1,88 +1,90 @@
-/* General Nav Container */
 nav {
-    background: white;
-    padding: 15px 50px;
-    border-bottom: 1px solid #ececec;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ececec;
+  font-size: 18px;
 }
 
-/* Flex container for the whole nav row */
 .nav-content {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins";
 }
 
-/* Browse Button Styling */
 .browse-btn {
-    background: #3BB77E;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  background: #3bb77e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .value-selector {
-    border: none;
-    font-size: 16px;
-   color: red;
-    background: #3BB77E;
-  
-
+  border: none;
+  font-size: 16px;
+  color: red;
+  background: #3bb77e;
 }
-/* Navigation Links List */
+
 .nav-links {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    padding: 0; /* Added: Remove default ul padding */
-    margin: 0; /* Added: Remove default ul margin */
-    flex: 1; /* Retained: allows links to fill space */
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+nav select {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 18px;
+  background: transparent;
+  color: #253d4e;
+  cursor: pointer;
 }
 
-/* Individual Link Anchor Tag Styling */
 .nav-links a {
-    text-decoration: none;
-    color: #253D4E;
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 0; /* Added: small padding for clickable area */
+  text-decoration: none;
+  color: #253d4e;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
 }
 
-/* Hover Effect */
 .nav-links a:hover {
-    color: #3BB77E;
+  color: #3bb77e;
 }
 
-/* Dropdown Arrow Styling (For "Mega menu" or "Page") */
 .nav-links a .arrow {
-    font-size: 0.7em; /* Make the arrow smaller */
-    margin-left: 2px;
+  font-size: 0.7em;
+  margin-left: 2px;
 }
 
-/* Phone Support Container Styling */
 .phone-support {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
-/* Phone Number (The text itself) */
 .phone-support strong {
-    color: #3BB77E;
-    font-weight: bold;
-    font-size: 18px;
+  color: #3bb77e;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-/* Support Text */
 .phone-support span {
-    font-size: 13px;
-    color: #666; /* Added a default color for the support text */
+  font-size: 13px;
+  color: #666;
 }

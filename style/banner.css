@@ -1,103 +1,92 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Roboto, Poppins, Inter, sans-serif;
-    background: #f5f7fa;
-}
-
-/* ===== Banner Section ===== */
-.banner-section {
-    position: relative;
-    padding: 60px 40px; /* content padding */
-    overflow: hidden;
-}
-
-/* Background with padding effect */
-.banner-section::before {
-    content: "";
-    position: absolute;
-    inset: 40px; /* THIS creates background padding */
-    background-image: url("../image/banner/bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 30px; /* optional nice look */
-    z-index: -1;
-}
-
-/* Main container */
-.banner-content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center ;
-     justify-content: space-around; 
-}
-
-/* Text Content */
-/* .banner-text-content {
-    position: ;
-} */
-
-.banner-text-content h1 {
-    font-size: 2.5rem;
-    font-weight:bold ;
-    font-family: Poppins;
-    line-height: 1.2;
-    margin-bottom: 15px;
-}
-
-.banner-text-content p {
-    font-size: 1.1rem;
-    font-family: Roboto;
-    color: #B0A9A9;;
-    margin-bottom: 25px;
-}
-
-.subscribe-form {
-    position: relative;
-    width: 280px;
-    margin-top: 20px;
-}
-
-/* Input */
-.subscribe-form input {
-    width: 100%;
-    padding: 12px 100px 12px 15px; /* right padding for button space */
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    outline: none;
-}
-
-/* Button inside input */
-.subscribe-form button {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    padding: 8px 18px;
-    background: #3BB77E;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-}
 
 
-.subscribe-form button:hover {
-    background: #e68900;
-}
+    /* ================= Banner Section ================= */
+    .banner-section {
+       font-family: "Poppins", "Roboto";
+      position: relative;
+      width: 1323px;
+      height: 447px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 20px;
+    }
 
-/* Product Image */
-.product-image {
-   
-    max-width: 420px;
-}
+    /* Background Image */
+    .bannar-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
+    /* Content Container */
+    .banner-content-container {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 200px;
+     
+    }
+
+
+
+    .banner-text-content h1 {
+      font-size: 42px;
+      font-weight: 700;
+      font-family: "Poppins";
+      line-height: 1.2;
+      color: #253d4e;
+      margin-bottom: 15px;
+    }
+
+    .banner-text-content p {
+      font-size: 18px;
+      font-family: "Roboto";
+      color: #7e7e7e;
+      margin-bottom: 25px;
+    }
+
+    /* Subscribe Form */
+    .subscribe-form {
+     
+      position: relative;
+      width: 320px;
+
+    }
+
+    .subscribe-form input {
+      width: 50%;
+      padding: 14px 110px 14px 18px;
+      border: 1px solid #ddd;
+      border-radius: 30px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .subscribe-form button {
+     
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      padding: 15px 22px;
+      background: #3bb77e;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .subscribe-form button:hover {
+      background: #2da56d;
+    }
+
+    /* Product Image */
+    .product-image-banner {
+      width: 500px;
+      height: 500px;
+    }
 

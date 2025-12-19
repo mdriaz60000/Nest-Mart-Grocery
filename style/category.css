@@ -1,36 +1,51 @@
 
 .category-contener {
-padding: 20px 30px;
+padding: 0 20px;
+ font-family: "Inter" ;
 }
 .category-list {
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family: Inter;
+    font-family: "Inter";
    
 }
+.category-list h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    margin-right: 20px;
+}
+.category-list ul li a.categories-active2 {
+  color: #3BB77E !important;
+}
+
 .category-list ul {
     display: flex;
     gap: 20px;
     list-style: none;
-   
-
-     
+ 
 }
 .category-list ul li a {
+  font-size: 16px;
+  font-weight: 400;
     text-decoration: none;
-     color: #000000;
+       color: #000000;
 }
+
+
 .category-list ul li a:hover {
-    color: #3BB77E; /* hover color */
+    color: #3BB77E; 
 }
+
 .all-category {
-    padding : 30px;
+    padding : 20px;
     display: flex ;
     align-items: center;
     gap: 1.2rem;
     
 }
+/* 2cn d */
 .all-category section {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -64,12 +79,13 @@ padding: 20px 30px;
 }
 
 .category-cart-products img {
-  width: 120px;
+  width: 246px;
+  height: 164px;
 }
-.category-cart-products div {
+.categories-cart-gird-v {
   display: flex;
-  flex-direction: column;
-  gap: 15px; /* p আর button এর মাঝে gap */
+
+  gap: 15px; 
 }
 .category-cart-products div p {
   font-size: 20px;
@@ -87,4 +103,19 @@ padding: 20px 30px;
   padding: 10px 16px;
   border-radius: 25px;
   cursor: pointer;
+}
+
+.category-cart-products-1 {
+  background: #F0E8D5;
+  display: flex;
+
+}
+.category-cart-products-2 {
+  background: #F3E8E8;
+ display: flex;
+
+}
+.category-cart-products-3 {
+  background: #E7EAF3;
+display: flex;
 }

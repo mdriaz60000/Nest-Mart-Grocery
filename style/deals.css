@@ -1,0 +1,146 @@
+.deals-by-daily-container {
+    padding: 20px 0;
+    font-family: "Poppins","Inter";
+}
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.deals-container {
+  display: flex;
+  gap: 30px;
+}
+
+.deals-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deals-card-image {
+  width: 319px;
+  height: 319px;
+  position: relative;
+  overflow: hidden;
+}
+
+.deals-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deals-countdown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.deals-time-box {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 55px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.deals-time-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.deals-time-label {
+  font-size: 11px;
+  color: #666;
+  display: block;
+  margin-top: 2px;
+}
+
+.deals-card-footer {
+  width: 295px;
+  height: 171px;
+  padding: 20px;
+  margin: 12px auto;
+}
+
+.deals-card-title {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  height: 44px;
+  overflow: hidden;
+}
+
+.deals-stars {
+  color: #ffc107;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.deals-brand {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.deals-brand-name {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.deals-price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.deals-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.deals-current-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.deals-old-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.deals-add-btn {
+  background: #e8f5e9;
+  color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.deals-add-btn:hover {
+  background: #c8e6c9;
+}

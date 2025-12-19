@@ -3,18 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?
+family=Roboto:wght@400;500;700&
+family=Poppins:wght@400;500;600;700&
+family=Inter:wght@400;500;600;700&
+display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/banner.css" />
     <link rel="stylesheet" href="style/category.css" />
     <link rel="stylesheet" href="style/popular-products.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/best-sells.css" />
+    <link rel="stylesheet" href="style/deals.css" />
+    <link rel="stylesheet" href="style/top.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
+    <title>Nest</title>
     <script
       src="https://kit.fontawesome.com/299f90ca80.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
+    <!-- header section -->
     <header>
       <div class="logo-section">
         <img class="" src="image/header/logo 1.png" alt="Company Logo" />
@@ -39,23 +55,23 @@
       <div class="icon-container">
         <div class="icon-item">
           <img src="image/header/Circle Around.png" alt="" />
-          <span class="badge">3</span>
-          <span>Compare</span>
+          <span class="badge-header">3</span>
+          <span class="icon-item-list-name">Compare</span>
         </div>
         <div class="icon-item">
           <img src="image/header/Love.png" alt="" />
-          <span class="badge">3</span>
-          <span>Wishlist</span>
+          <span class="badge-header">3</span>
+          <span class="icon-item-list-name">Wishlist</span>
         </div>
         <div class="icon-item">
           <img src="image/header/Shopping Cart.png" alt="" />
-          <span class="badge">3</span>
-          <span>Cart</span>
+          <span class="badge-header">3</span>
+          <span class="icon-item-list-name">Cart</span>
         </div>
         <div class="icon-item">
           <img src="image/header/Profile.png" alt="" />
 
-          <span>Account</span>
+          <span class="icon-item-list-name">Account</span>
         </div>
       </div>
     </header>
@@ -86,7 +102,7 @@
    <div class="phone-support">
             <img src="image/header/Headphones.png" alt="Headphones Icon">
             <div>
-                <strong class="phone-number">+0123 456 789</strong>
+                <strong class="phone-number">+0123-888</strong>
                 <br>
                 <span>Support 24/7</span>
             </div>
@@ -94,6 +110,8 @@
     </nav>
     <!-- banner section -->
   <section class="banner-section">
+    <img class="bannar-background" src="image/banner/bg.png" alt="">
+
     <div class="banner-content-container">
 
         <div class="banner-text-content">
@@ -109,7 +127,7 @@
             </div>
         </div>
 
-        <img class="product-image" src="image/banner/3-removebg-preview 1.png" alt="Fresh Vegetables">
+        <img class="product-image-banner" src="image/banner/3-removebg-preview 1.png" alt="Fresh Vegetables">
 
     </div>
 </section>
@@ -120,7 +138,7 @@
       <ul>
         <li><a href="">Cake & Milk</a></li>
         <li><a href="">Coffes & Teas</a></li>
-        <li><a href="">Pet Foods</a></li>
+        <li><a class="categories-active2" href="">Pet Foods</a></li>
         <li><a href="">Vegetables</a></li>
       </ul>
     </div>
@@ -135,21 +153,21 @@
       <section>
         <a href="">
         <img src="image/category/10-removebg-preview 1.png" alt="">
-        <h4>Cake & Milk</h4>
+        <h4>vegetables</h4>
         <h6>26 items</h6>
         </a>
       </section>
       <section>
         <a href="">
         <img src="image/category/5-removebg-preview 1.png" alt="">
-        <h4>Cake & Milk</h4>
+        <h4>Oganic kiwi</h4>
         <h6>26 items</h6>
         </a>
       </section>
       <section>
         <a href="">
         <img src="image/category/4-removebg-preview 1.png" alt="">
-        <h4>Cake & Milk</h4>
+        <h4>Peach</h4>
         <h6>26 items</h6>
         </a>
       </section>
@@ -169,21 +187,21 @@
       </section>
       <section>
         <a href="">
-        <img src="image/category/4-removebg-preview 1.png" alt="">
+        <img src="image/category/9-removebg-preview 1.png" alt="">
         <h4>Cake & Milk</h4>
         <h6>26 items</h6>
         </a>
       </section>
       <section>
         <a href="">
-        <img src="image/category/4-removebg-preview 1.png" alt="">
+        <img src="image/category/3-removebg-preview (1) 1.png" alt="">
         <h4>Cake & Milk</h4>
         <h6>26 items</h6>
         </a>
       </section>
       <section>
         <a href="">
-        <img src="image/category/4-removebg-preview 1.png" alt="">
+        <img src="image/category/009c6be856b569b009527f4656b640bf-removebg-preview 1.png" alt="">
         <h4>Cake & Milk</h4>
         <h6>26 items</h6>
         </a>
@@ -200,31 +218,36 @@
 
   </div>
   <!-- category-cart -->
-<div class="category-cart">
-  <section class="category-cart-products">
-    <div >
-      <p>Everyday Fresh &  <br>  Clean with Our <br> Products</p>
-      <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
-    </div>
-    <img src="image/category-cart/7-removebg-preview (1) 1.png" alt="">
-  </section>
+<div class="category-cart-all">
+  <div class="categories-cart-gird-v">
 
-  <section class="category-cart-products">
-    <div>
-      <p>Make your Breakfast <br> Healthy and Easy</p>
-      <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
-    </div>
-    <img src="image/category-cart/9-removebg-preview (1) 1.png" alt="">
-  </section>
+    <section class="category-cart-products category-cart-products-1">
+      <div>
+        <p>Everyday Fresh & <br> Clean with Our <br> Products</p>
+        <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div>
+      <img src="image/category-cart/7-removebg-preview (1) 1.png" alt="">
+    </section>
 
-  <section class="category-cart-products">
-    <div>
-      <p>The best Organic <br> Products Online</p>
-      <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
-    </div>
-    <img src="image/category-cart/10-removebg-preview (1) 1.png" alt="">
-  </section>
+    <section class="category-cart-products category-cart-products-2">
+      <div>
+        <p>Make your Breakfast <br> Healthy and Easy</p>
+        <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div>
+      <img src="image/category-cart/9-removebg-preview (1) 1.png" alt="">
+    </section>
+
+    <section class="category-cart-products category-cart-products-3">
+      <div>
+        <p>The best Organic <br> Products Online</p>
+        <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div>
+      <img src="image/category-cart/10-removebg-preview (1) 1.png" alt="">
+    </section>
+
+  </div>
 </div>
+
  <!-- Popular Product  -->
   <div class="popular-products-section">
    
@@ -260,7 +283,7 @@
                             <span class="current-price">$28.85</span>
                             <span class="old-price">$32.8</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
@@ -270,7 +293,7 @@
             <!-- Product 3 -->
             <div class="product-card">
                 <span class="product-badge badge-new">New</span>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23E8F5E9' width='200' height='200'/%3E%3Cellipse cx='80' cy='100' rx='30' ry='50' fill='%234CAF50'/%3E%3Cellipse cx='120' cy='100' rx='30' ry='50' fill='%234CAF50'/%3E%3Crect x='75' y='60' width='10' height='20' fill='%232E7D32'/%3E%3Crect x='115' y='60' width='10' height='20' fill='%232E7D32'/%3E%3C/svg%3E" alt="Product" class="product-image">
+                <img src="image/popular/11-removebg-preview (1) 1.png" alt="Product" class="product-image">
                 <div class="product-info">
                     <div class="product-category">Headphone</div>
                     <h3 class="product-name">Ultras Bass Headphone</h3>
@@ -284,7 +307,7 @@
                             <span class="current-price">$54.85</span>
                             <span class="old-price">$55.8</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
@@ -294,7 +317,7 @@
             <!-- Product 4 -->
             <div class="product-card">
                 <span class="product-badge badge-sale">Sale</span>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23E3F2FD' width='200' height='200'/%3E%3Cellipse cx='70' cy='120' rx='25' ry='35' fill='%2390CAF9'/%3E%3Cellipse cx='100' cy='100' rx='30' ry='45' fill='%2364B5F6'/%3E%3Cellipse cx='130' cy='120' rx='25' ry='35' fill='%2390CAF9'/%3E%3Ccircle cx='70' cy='100' r='5' fill='%23FFF'/%3E%3Ccircle cx='100' cy='80' r='5' fill='%23FFF'/%3E%3Ccircle cx='130' cy='100' r='5' fill='%23FFF'/%3E%3C/svg%3E" alt="Product" class="product-image">
+                <img src="image/popular/14-removebg-preview 1.png">
                 <div class="product-info">
                     <div class="product-category">Shampoo</div>
                     <h3 class="product-name">Copardo Dry Ginger Ale - 2 L Bottle-200ml-400g</h3>
@@ -308,7 +331,7 @@
                             <span class="current-price">$15.85</span>
                             <span class="old-price">$25.8</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
@@ -318,7 +341,7 @@
             <!-- Product 5 -->
             <div class="product-card">
                 <span class="product-badge badge-hot">Hot</span>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23FFF8E1' width='200' height='200'/%3E%3Crect x='60' y='60' width='80' height='100' rx='5' fill='%231565C0'/%3E%3Ctext x='100' y='110' font-size='24' font-weight='bold' text-anchor='middle' fill='%23FDD835'%3EPASTA%3C/text%3E%3C/svg%3E" alt="Product" class="product-image">
+                <img src="image/popular/6-removebg-preview (2) 1.png" alt="Product" class="product-image">
                 <div class="product-info">
                     <div class="product-category">Pasta</div>
                     <h3 class="product-name">Ultras Bass Headphone</h3>
@@ -332,7 +355,7 @@
                             <span class="current-price">$238.85</span>
                             <span class="old-price">$245.8</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
@@ -342,7 +365,7 @@
             <!-- Product 6 -->
             <div class="product-card">
                 <span class="product-badge badge-sale">Sale</span>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23E8F5E9' width='200' height='200'/%3E%3Crect x='50' y='50' width='100' height='110' rx='8' fill='%234CAF50'/%3E%3Ctext x='100' y='100' font-size='20' font-weight='bold' text-anchor='middle' fill='%23FFF'%3ECHIPS%3C/text%3E%3C/svg%3E" alt="Product" class="product-image">
+                <img src="image/popular/8-removebg-preview (2) 1.png" class="product-image">
                 <div class="product-info">
                     <div class="product-category">Snack</div>
                     <h3 class="product-name">Smart Bluetooth Speaker</h3>
@@ -356,7 +379,7 @@
                             <span class="current-price">$138.85</span>
                             <span class="old-price">$145.8</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
@@ -366,7 +389,7 @@
             <!-- Product 7 -->
             <div class="product-card">
                 <span class="product-badge badge-new">New</span>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23FFF8E1' width='200' height='200'/%3E%3Crect x='60' y='50' width='35' height='110' rx='17' fill='%238BC34A'/%3E%3Crect x='105' y='50' width='35' height='110' rx='17' fill='%238BC34A'/%3E%3Ccircle cx='77' cy='60' r='8' fill='%23FFF'/%3E%3Ccircle cx='122' cy='60' r='8' fill='%23FFF'/%3E%3C/svg%3E" alt="Product" class="product-image">
+                <img src="image/popular/11-removebg-preview (1) 1.png" alt="Product" class="product-image">
                 <div class="product-info">
                     <div class="product-category">Vegetable</div>
                     <h3 class="product-name">HomeSpeak 12UEA Goole</h3>
@@ -380,7 +403,7 @@
                             <span class="current-price">$738.85</span>
                             <span class="old-price">$1245.8</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
@@ -389,8 +412,8 @@
 
             <!-- Product 8 -->
             <div class="product-card">
-                <span class="product-badge badge-best">Best</span>
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23E8F5E9' width='200' height='200'/%3E%3Crect x='50' y='50' width='100' height='100' rx='5' fill='%234CAF50'/%3E%3Ctext x='100' y='100' font-size='16' font-weight='bold' text-anchor='middle' fill='%23FFF'%3ECREAM%3C/text%3E%3Ctext x='100' y='120' font-size='12' text-anchor='middle' fill='%23FFF'%3ERICE%3C/text%3E%3C/svg%3E" alt="Product" class="product-image">
+                <span class="product-badge-badge-best">Best</span>
+                <img src="image/popular/1...-removebg-preview 1.png" alt="Product" class="product-image">
                 <div class="product-info">
                     <div class="product-category">Cream</div>
                     <h3 class="product-name">Dadua Camera 4k 2024EF</h3>
@@ -404,14 +427,723 @@
                             <span class="current-price">$89.8</span>
                             <span class="old-price">$99</span>
                         </div>
-                        <button class="add-to-cart">
+                        <button class="add-to-cart-popular">
                             🛒 Add
                         </button>
                     </div>
                 </div>
             </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <span class="product-badge badge-best">Best</span>
+                <img src="image/popular/14-removebg-preview 1.png" alt="Product" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Cream</div>
+                    <h3 class="product-name">Dadua Camera 4k 2024EF</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(4.0)</span>
+                    </div>
+                    <div class="product-vendor">By <span class="vendor-name">NestFood</span></div>
+                    <div class="product-footer">
+                        <div class="product-price">
+                            <span class="current-price">$89.8</span>
+                            <span class="old-price">$99</span>
+                        </div>
+                        <button class="add-to-cart-popular">
+                            🛒 Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+    </div>
+
+    <!-- best sells -->
+<section class="prodouct-best-sells-list">
+  <div class="products-container">
+        <div class="products-header">
+            <h2>Daily Best Sells</h2>
+            <ul class="category-tabs">
+                <li class="active">Featured</li>
+                <li>Popular</li>
+                <li>New added</li>
+                
+            </ul>
+        </div>
+  </div>
+    <!-- best sells 2 -->
+  
+            <div class="best-sells-container">
+        <!-- Featured Card (321px) -->
+        <div class="card featured">
+            <div class="content">
+                <h2>Bring nature<br>into your<br>home</h2>
+                <a href="#" class="shop-btn">Shop now →</a>
+            </div>
+            <div class="plant-image">
+       <img src="image/best-sells/3-removebg-preview (3) 1.png" alt="">
+            </div>
+        </div>
+
+        <!-- Regular Card 1 (252px) -->
+        <div class="card regular">
+            <span class="badge hot">Hot</span>
+            <img src="image/best-sells/6-removebg-preview (3) 1.png" alt="Chicken Meatballs" class="product-image">
+            <h3 class="product-title">All Natural Italian-Style Chicken Meatballs</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">(524)</span>
+            </div>
+            <div class="price">₹6250.70</div>
+            <button class="add-to-cart-best-sells">
+                <span class="cart-icon">🛒</span>
+                Add to cart
+            </button>
+        </div>
+
+        <!-- Regular Card 2 (252px) -->
+        <div class="card regular">
+            <span class="badge sale">Sale</span>
+            <img src="image/best-sells/10-removebg-preview (2) 1.png" alt="Avocado Meatballs" class="product-image">
+            <h3 class="product-title">All Natural Italian-Style Chicken Meatballs</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">(310)</span>
+            </div>
+            <div class="price">₹6100.00</div>
+            <button class="add-to-cart-best-sells">
+                <span class="cart-icon">🛒</span>
+                Add to cart
+            </button>
+        </div>
+
+        <!-- Regular Card 3 (252px) -->
+        <div class="card regular">
+            <span class="badge popular">Popular</span>
+            <img src="image/best-sells/11-removebg-preview (2) 1.png" alt="Sweet Waffles" class="product-image">
+            <h3 class="product-title">Angie's Boomchickapop Sweet and sarmies</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">(420)</span>
+            </div>
+            <div class="price">₹6490.00</div>
+            <button class="add-to-cart-best-sells">
+                <span class="cart-icon">🛒</span>
+                Add to cart
+            </button>
+        </div>
+
+        <!-- Regular Card 4 (252px) -->
+        <div class="card regular">
+            <span class="badge best">Best</span>
+            <img src="image/best-sells/4-removebg-preview (1) 1.png" alt="Blue Diamond Almonds" class="product-image">
+            <h3 class="product-title">Blue Diamond Almonds Lightly Salted</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">(528)</span>
+            </div>
+            <div class="price">₹6620.00</div>
+            <button class="add-to-cart-best-sells">
+                <span class="cart-icon">🛒</span>
+                Add to cart
+            </button>
         </div>
     </div>
-    </section>
-  </body>
+      </section>
+     </div>
+     <!-- deals by daily -->
+<section class="deals-by-daily-container">
+  <p class="name"> Deals Of The Day</p>
+  <div class="deals-container">
+
+        <!-- Card 1 -->
+        <div class="deals-card">
+            <div class="deals-card-image">
+                <img src="image/deals/Rectangle 43.png" alt="">
+                <div class="deals-countdown">
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Days</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Hours</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Mins</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Sec</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deals-card-footer">
+                <h3 class="deals-card-title">
+                    Seeds of Change Organic Quinoa, Brown, & Red Rice
+                </h3>
+                <div class="deals-stars">★★★★★</div>
+                <p class="deals-brand">
+                    By <a href="#" class="deals-brand-name">NestFood</a>
+                </p>
+
+                <div class="deals-price-section">
+                    <div class="deals-price">
+                        <span class="deals-current-price">$54.85</span>
+                        <span class="deals-old-price">$55.00</span>
+                    </div>
+                    <button class="deals-add-btn">🛒 Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="deals-card">
+            <div class="deals-card-image">
+                <img src="image/deals/Rectangle 44.png" alt="">
+                <div class="deals-countdown">
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">166</span>
+                        <span class="deals-time-label">Days</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">08</span>
+                        <span class="deals-time-label">Hours</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">26</span>
+                        <span class="deals-time-label">Mins</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">08</span>
+                        <span class="deals-time-label">Sec</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deals-card-footer">
+                <h3 class="deals-card-title">
+                    Perdue Simply Smart Organics Gluten Free
+                </h3>
+                <div class="deals-stars">★★★★★</div>
+                <p class="deals-brand">
+                    By <a href="#" class="deals-brand-name">Old El Paso</a>
+                </p>
+
+                <div class="deals-price-section">
+                    <div class="deals-price">
+                        <span class="deals-current-price">$54.85</span>
+                        <span class="deals-old-price">$55.00</span>
+                    </div>
+                    <button class="deals-add-btn">🛒 Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="deals-card">
+            <div class="deals-card-image">
+                <img src="image/deals/Rectangle 45.png" alt="">
+                <div class="deals-countdown">
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">502</span>
+                        <span class="deals-time-label">Days</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">08</span>
+                        <span class="deals-time-label">Hours</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">24</span>
+                        <span class="deals-time-label">Mins</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">18</span>
+                        <span class="deals-time-label">Sec</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deals-card-footer">
+                <h3 class="deals-card-title">
+                    Signature Wood-Fired Mushroom and Caramelized
+                </h3>
+                <div class="deals-stars">★★★★★</div>
+                <p class="deals-brand">
+                    By <a href="#" class="deals-brand-name">Progresso</a>
+                </p>
+
+                <div class="deals-price-section">
+                    <div class="deals-price">
+                        <span class="deals-current-price">$54.85</span>
+                        <span class="deals-old-price">$55.00</span>
+                    </div>
+                    <button class="deals-add-btn">🛒 Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="deals-card">
+            <div class="deals-card-image">
+                <img src="image/deals/Rectangle 46.png" alt="">
+                <div class="deals-countdown">
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Days</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Hours</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Mins</span>
+                    </div>
+                    <div class="deals-time-box">
+                        <span class="deals-time-value">00</span>
+                        <span class="deals-time-label">Sec</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deals-card-footer">
+                <h3 class="deals-card-title">
+                    Simply Lemonade with Raspberry Juice
+                </h3>
+                <div class="deals-stars">★★★★★</div>
+                <p class="deals-brand">
+                    By <a href="#" class="deals-brand-name">Yoplait</a>
+                </p>
+
+                <div class="deals-price-section">
+                    <div class="deals-price">
+                        <span class="deals-current-price">$54.85</span>
+                        <span class="deals-old-price">$55.00</span>
+                    </div>
+                    <button class="deals-add-btn">🛒 Add</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+     <!-- top recent - top new added -->
+<div class="top-container">
+
+    <!-- Top Selling -->
+    <div class="top-section">
+        <h2 class="top-section-title">Top Selling</h2>
+
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 22.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Nestle Original Coffee-Mate Creamer</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$54.85</span>
+                        <span class="top-old-price">$55.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-product-card">
+                <img src="image/top/Frame 23.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Premium Roasted Coffee Beans</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★☆</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$48.25</span>
+                        <span class="top-old-price">$52.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-product-card">
+                <img src="image/top/Frame 24.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Premium Roasted Coffee Beans</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★☆</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$48.25</span>
+                        <span class="top-old-price">$52.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Trending Products -->
+    <div class="top-section">
+        <h2 class="top-section-title">Trending Products</h2>
+
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 80.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Cinnamon Vanilla Light Roast Coffee</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★☆</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$39.99</span>
+                        <span class="top-old-price">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 82.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Cinnamon Vanilla Light Roast Coffee</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★☆</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$39.99</span>
+                        <span class="top-old-price">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 81.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Cinnamon Vanilla Light Roast Coffee</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★☆</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$39.99</span>
+                        <span class="top-old-price">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Recently Added -->
+    <div class="top-section">
+        <h2 class="top-section-title">Recently Added</h2>
+
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 86.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Pepperidge Farm White Bread</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$22.50</span>
+                        <span class="top-old-price">$25.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 87.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Pepperidge Farm White Bread</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$22.50</span>
+                        <span class="top-old-price">$25.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 88.png" class="top-product-image">
+                <div class="top-product-info">
+                    <div class="top-product-name">Pepperidge Farm White Bread</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$22.50</span>
+                        <span class="top-old-price">$25.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="top-section">
+        <h2 class="top-section-title">Top Rated</h2>
+
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 89.png">
+                <div class="top-product-info">
+                    <div class="top-product-name">Crispy Buffalo Chicken Wings</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$59.99</span>
+                        <span class="top-old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 90.png">
+                <div class="top-product-info">
+                    <div class="top-product-name">Crispy Buffalo Chicken Wings</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$59.99</span>
+                        <span class="top-old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-products-grid">
+            <div class="top-product-card">
+                <img src="image/top/Frame 91.png">
+                <div class="top-product-info">
+                    <div class="top-product-name">Crispy Buffalo Chicken Wings</div>
+                    <div class="top-rating">
+                        <span class="top-stars">★★★★★</span>
+                        <span class="top-rating-count">(4.0)</span>
+                    </div>
+                    <div class="top-price-container">
+                        <span class="top-current-price">$59.99</span>
+                        <span class="top-old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 2nd Banner section -->
+  <section class="banner-section">
+    <img class="bannar-background" src="image/banner/bg.png" alt="">
+
+    <div class="banner-content-container">
+
+        <div class="banner-text-content">
+            <h1>
+                Fresh Vegetables <br>
+                Big Discount
+            </h1>
+            <p>Save up to 50% off on your first order</p>
+
+            <div class="subscribe-form">
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <img class="product-image-banner" src="image/banner/5-removebg-preview (1) 1.png" alt="Fresh Vegetables">
+
+    </div>
+</section>
+    <!-- Features Bar -->
+    <div class="features-bar">
+        <div class="features-container">
+            <div class="feature-item">
+                <div class="feature-icon">🏷️</div>
+                <div class="feature-text">
+                    <h4>Best prices & offers</h4>
+                    <p>Orders $50 or more</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚚</div>
+                <div class="feature-text">
+                    <h4>Free delivery</h4>
+                    <p>24/7 amazing services</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <div class="feature-text">
+                    <h4>Great daily deal</h4>
+                    <p>When you sign up</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛍️</div>
+                <div class="feature-text">
+                    <h4>Wide assortment</h4>
+                    <p>Mega Discounts</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📦</div>
+                <div class="feature-text">
+                    <h4>Easy returns</h4>
+                    <p>Within 30 days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Main -->
+    <div class="footer-main">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- About Column -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                      <img src="image/header/logo 1.png" alt="">
+                    </div>
+                    <p>Awesome grocery store website template</p>
+                    <p class="address"><strong>Address:</strong> 5171 W Campbell Ave undefined Kent UT 84097 United States</p>
+                    <p class="phone"><strong>Call Us:</strong> (+91) - 540-025-124553</p>
+                    <p class="email"><strong>Email:</strong> sale@Nest.com</p>
+                    <p class="hours"><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Account Column -->
+                <div class="footer-column">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Help Ticket</a></li>
+                        <li><a href="#">Shipping Details</a></li>
+                        <li><a href="#">Compare products</a></li>
+                    </ul>
+                </div>
+
+                <!-- Corporate Column -->
+                <div class="footer-column">
+                    <h3>Corporate</h3>
+                    <ul>
+                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Farm Business</a></li>
+                        <li><a href="#">Farm Careers</a></li>
+                        <li><a href="#">Our Suppliers</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Promotions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Column -->
+                <div class="footer-column">
+                    <h3>Popular</h3>
+                    <ul>
+                        <li><a href="#">Milk & Flavoured Milk</a></li>
+                        <li><a href="#">Butter and Margarine</a></li>
+                        <li><a href="#">Eggs Substitutes</a></li>
+                        <li><a href="#">Marmalades</a></li>
+                        <li><a href="#">Sour Cream and Dips</a></li>
+                        <li><a href="#">Tea & Kombucha</a></li>
+                        <li><a href="#">Cheese</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- App & Payment Section -->
+            <div class="footer-middle-section-api" >
+                <div class="app-section">
+                    <h4>Install App</h4>
+                    <p >From App Store or Google Play</p>
+                    <div class="app-buttons">
+                     <img src="image/footer/imag2-removebg-preview 1.png" alt="">
+                  <img src="image/footer/images_1-removebg-preview 1.png" alt="">
+                    </div>
+                </div>
+                <div class="payment-section">
+                    <h4>Secured Payment Gateways</h4>
+                    <div class="payment-icons">
+                      <img src="image/footer/image 6.png" alt="">
+                      <img src="image/footer/image 7.png" alt="">
+                      <img src="image/footer/jo-removebg-preview 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024, <a href="#">Nest</a> - HTML Ecommerce Template<br>All rights reserved
+                </div>
+
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>1900 - 6666</strong><br>
+                            <span style="font-size: 12px;">Working 8:00 - 22:00</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>1900 - 8888</strong><br>
+                            <span style="font-size: 12px;">24/7 Support Center</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <span class="social-follow">Follow Us</span>
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">p</a>
+                    <a href="#" class="social-icon">y</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

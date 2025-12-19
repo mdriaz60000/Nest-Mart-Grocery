@@ -1,93 +1,124 @@
-       body {
-            margin: 0;
-             font-family: Roboto, Poppins, Inter, sans-serif;
-            background: #F5F7FA;
-       }
-
-       header {
-            background: white;
-            padding: 15px 50px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-             justify-content: space-between; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-            .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #3BB77E;
-        }
-        
-        .search-container {
-             display: flex;
-            align-items: center;
-            border: 2px solid #BCE3C9;
-            border-radius: 5px;
-            overflow: hidden;
-            max-width: 600px;
-            flex: 1;
-        }
-             .category-select {
-            padding: 12px 15px;
-            border: none;
-            background: white;
-            border-right: 1px solid #BCE3C9;
-            cursor: pointer;
-            font-size: 14px;
-            color: #253D4E;
-        }
-       .search-input {
-            flex: 1;
-            padding: 12px 15px;
-            border: none;
-            outline: none;
-            font-size: 14px;
-        }
-
-            .search-btn {
-           
-            border: none;
-            cursor: pointer;
-            
-        }
-
-        .icon-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-         .icon-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-            position: relative;
-        }
-        .icon-item img {
-    width: 28px;
+body {
+  margin: 0;
+   font-family: 'Roboto', 'Poppins', 'Inter', sans-serif;
+  background: white;
+  width: 100%; 
+  max-width: 1440px; 
+  margin: 0 auto;
 }
-              .badge {
-            position: absolute;
-            top: -6px;
-            left: -6px;
-            background: #3BB77E;
-            color: white;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: bold;
-        }
+
+header {
+  background: white;
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  justify-content: space-between;   
+  flex-wrap: nowrap;
+  width: 100%;
+  box-sizing: border-box; 
+  border-bottom: #253d4e 1px solid;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3bb77e;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #bce3c9;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 600px;
+  flex: 1;
+  min-width: 0; /* Added: flex item shrink করতে পারবে */
+}
+
+.category-select {
+  padding: 12px 15px;
+  border: none;
+  font-family: Roboto;
+  font-size: 14px; /* Fixed: duplicate font-size removed */
+  font-weight: 600;
+  background: white;
+  border-right: 1px solid #bce3c9;
+  cursor: pointer;
+  color: #253d4e;
+}
+
+.category-select option {
+  font-size: 14px; /* Fixed: 20px থেকে 14px */
+  font-weight: 600;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  min-width: 0; /* Added: input overflow prevent করতে */
+}
+
+.search-btn {
+  border: none;
+  cursor: pointer;
+  background: transparent; /* Added: background specify করা */
+  padding: 8px; /* Added: clickable area বাড়ানোর জন্য */
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Inter;
+  flex-shrink: 0; /* Added: icons shrink হবে না */
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-item img {
+  width: 28px;
+  height: auto; /* Added: aspect ratio maintain করতে */
+}
+
+.badge-header {
+  position: absolute;
+  top: -6px;
+  left: 14px;
+  background: #3bb77e;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.icon-item-list-name {
+  font-size: 16px; /* Fixed: 20px অনেক বড়, 16px করা হয়েছে */
+  color: #253d4e;
+  font-weight: 500;
+  white-space: nowrap; /* Added: text wrap হবে না */
+}
